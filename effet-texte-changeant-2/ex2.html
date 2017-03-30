@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Script jQuery Effets de texte avec remplacement : Outils-web.com</title>
+<meta name="description" content="5 effets de texte glissant, utilisables pour un menus par exemple" />
+<meta name="Robots" content="all"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<style>
+/* paramètres de l'effet ici*/
+.sl_examples a#example2 span span.sl-w2{color:#899F11; text-shadow: 1px 1px 2px #000;z-index:3;}
+</style>
+</head>
+
+<body>
+<h1>Changement de couleur et de texte</h1>
+<p>survolez le texte ci-dessous</p>
+<div class="sl_examples">
+	<a href="#" id="example2" data-hover="LES&nbsp;OUTILS&nbsp;DU&nbsp;WEB">OUTILS-WEB.COM</a>
+</div>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.lettering.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/jquery.hoverwords.js"></script>
+	
+<script type="text/javascript">
+	$(window).load(function(){
+		$('#example1').hoverwords({delay:50});
+		$('#example2').hoverwords();
+		$('#example3').hoverwords();
+		$('#example4').hoverwords({overlay:true});
+		$('#example5').hoverwords({delay:60 });
+	});
+</script>
+
+<!-- Source : http://tympanus.net -->	
+</body>
+</html>
